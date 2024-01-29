@@ -16,6 +16,29 @@ class Line:
             self.pt1.x, self.pt1.y, self.pt2.x, self.pt2.y, fill=fill_color, width=2
         )
         canvas.pack()
+class Cell:
+    def __init__(self, _x1: int, _x2: int, _y1:int, _y2:int, win, has_left_wall=True, has_right_wall=True, has_top_wall=True, has_bottom_wall=True) -> None:
+        self.has_left_wall = has_left_wall
+        self.has_right_wall = has_right_wall
+        self.has_top_wall = has_top_wall
+        self.has_bottom_wall =has_bottom_wall
+        self._x1 = _x1
+        self._x2 = _x2
+        self._y1 = _y1
+        self._y2 = _y2
+        self._win = win 
+        
+    def draw(self, canvas: Canvas):
+        
+        if self.has_left_wall:
+            canvas.create_line(self._x1, self._)
+        if self.has_top_wall:
+            canvas.create_line()
+        if self.has_bottom_wall:
+            canvas.create_line()
+        if self.has_right_wall:
+            canvas.create_line()
+        
         
         
 class Window:
