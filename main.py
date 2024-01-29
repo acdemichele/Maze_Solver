@@ -41,7 +41,7 @@ class Window:
         self.running = False
     
     def draw_line(self, line: Line, fill_color: str):
-        line.draw()
+        line.draw(self.canvas, fill_color)
 
 def main():
     
