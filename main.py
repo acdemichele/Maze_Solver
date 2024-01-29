@@ -15,7 +15,7 @@ class Line:
         canvas.create_line(
             self.pt1.x, self.pt1.y, self.pt2.x, self.pt2.y, fill=fill_color, width=2
         )
-        self.canvas.pack(fill=BOTH, expand=True)
+        canvas.pack()
         
         
 class Window:
